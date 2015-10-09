@@ -1,0 +1,25 @@
+name: Achievements
+main: bl4ckscor3.plugin.achievements.core.Achievements
+version: 9.4.1_3
+author: bl4ckscor3
+description: Hardcoded achievement plugin for the official SecurityCraft server.
+depend: [bl4ckkitCore]
+commands:
+    achievements:
+        description: Opens a GUI with all the achievements.
+        usage: /<command> [clear] [name]
+        aliases: [a]
+    rules:
+        description: Overrides the /rules command from Essentials for the rules achievement.
+        usage: /<command> [page|chapter]
+permissions:
+    achievements.clear:
+        description: Allows a player to clear his own achievements.
+        default: op
+    achievements.clear.all:
+        description: Allows a player to clear the achievements from others.
+        default: op
+    achievements.show.others:
+        description: Allows you to see the achievements of others.
+        default: op
+        
